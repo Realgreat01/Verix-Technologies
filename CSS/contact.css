@@ -1,0 +1,113 @@
+
+.form-field{
+   
+    min-width:200px;
+    padding:20px;
+    
+}
+
+fieldset{
+    padding:20px;
+    border-radius: 25PX;
+    /* background: #eee; */
+    border:none;
+    height:32rem;
+}
+legend{
+    font-size: large;
+    border: 5px solid var(--primary);
+    padding:5px;
+    background:var(--primary);
+    border-radius: 10px;
+    color:var(--secondary);
+    font-weight: bold;
+
+}
+label{
+    background: var(--secondary);
+    color:var(--primary);
+    margin:5px;
+    padding: 10px;
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+    border-radius: 10px;
+    align-items: center;
+    transition:2s;
+}
+input{
+    font-family:lato;
+    background:none;
+    color: var(--primary);
+    text-transform:none;
+    border:0.1rem solid var(--primary) ;
+    border-radius:5px;
+    padding:1rem;
+    border-bottom: var(--primary) solid 1px;
+    outline:none;
+    height: 2pc;
+    margin-left:-10px;
+    margin:5px;
+    width:50%;
+    overflow: visible;
+    transition:1s;
+}
+
+textarea{
+    font-family:LondonMM;
+    border-radius:5px;
+    border-bottom: var(--primary) solid 1px;
+    outline:none;
+    margin-left:-10px;
+    margin:5px;
+    width:50%;
+    overflow: visible;
+    transition:1s;
+    text-decoration: none;
+}
+
+input:focus, textarea:focus{
+    min-width:max-content;
+    width:90%;
+    color:var(--primary);
+    border-bottom: var(--primary) solid 1px;
+    transition:2s;  
+}
+
+.btn-contact button{
+    min-width:10rem;
+    max-width:100px;
+}
+
+#message{
+    height:50px;
+    border: blue solid 1px;
+    /* min-width:150px; */
+    /* display:flex; */
+}
+label h3{
+    font-size: 1rem;
+    font-weight: 400;
+}
+#promotion{
+    font-family:lato;
+    text-transform:none;
+    border:0.1rem solid var(--primary) ;
+    border-radius:10px;
+    padding:1rem;
+    border-bottom: var(--primary) solid 1px;
+    outline:none;
+    animation:none;
+    height: 2pc;
+    margin-left:-10px;
+    transition: none;
+    margin:5px;
+    width:50%;
+    overflow: visible;
+}
+#promotion:focus{
+    min-width:max-content;
+    width:initial;
+    color:var(--primary);
+    border-bottom: var(--primary) solid 1px;
+    transition:none;
+}

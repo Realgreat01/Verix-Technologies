@@ -1,0 +1,22 @@
+Terminal 
+    >npm install -D tailwindcss {This installs tailwindcss}
+    >npx tailwindcss init {This creates the Tailwind Config file}
+
+tailwind.config.js
+module.exports = {
+  content: ["./*.{html,js}"],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+
+ADD TAILWIDN TO CSS BASE file
+
+@tailwind utilities;
+@tailwind components;
+@tailwind utilities; 
+
+
+Start the Build Process
+>npx tailwindcss -i ./input.css -o ./output.css --watch

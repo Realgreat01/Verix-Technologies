@@ -1,0 +1,68 @@
+    @media screen and (min-width:960px){
+    /* .our-services-head{  */
+      
+        #nav-bar{
+            visibility:show;
+        }
+        #nav-tag{
+            display: none;
+        }
+
+        #head-tag{
+            font-size:3rem;
+            animation-name: gobig;
+            animation-duration:5s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+        /* .partner-images img{
+             animation-name: partners;
+            animation-duration:5s;
+            transition: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        } */
+    .skills, .our-services-head , #about-us-tag, .partners, .testifiers{
+        min-height:50%;
+        margin:0 auto;
+        width:80%;
+        /* position:sticky; */
+
+        
+    }
+    fieldset{
+        max-width: 50%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width:360px) {
+    #nav-bar{
+        visibility:hidden;
+        display:block;
+        transition: 2s;
+        background: var(--color);
+    }
+}
+
+
+@keyframes gobig{
+    0%{
+        display:none;
+        opacity:0;
+        transform:translateX(-20px)
+    }
+
+    40%{
+        display:block;
+        transform:shrink(2);
+        opacity:1;
+        transform:translateX(10%)
+    }
+
+    100%{
+        transform:translateX(0px);
+        opacity:0.5;
+    }
+}
